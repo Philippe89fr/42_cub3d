@@ -3,7 +3,7 @@
 # Description:
 cub3D is a 3D graphics project inspired by the world-famous Wolfenstein 3D game. The project implements a ray-casting engine to create a "realistic" 3D of the inside of a maze. The project uses the miniLibX graphics library to display wall textures, floor, colors, and allow smooth window management. The program takes a scene description file (.cub format) that defines the maze layout, textures, and colors, parsing this information to create the map and launch the game.
 
-<img src="./image.png" alt="Screenshot du jeu" width="500">
+<img src="./Screenshot du jeu.png" alt="Screenshot du jeu" width="500">
 
 # Context:
 Part of 42 Common Core.
@@ -51,5 +51,5 @@ make
 ```
 3. Launch Game:
 ```bash
-./so_long maps/valide_grande.ber
+./cub3d maps/good/sad_face.cub
 ```
