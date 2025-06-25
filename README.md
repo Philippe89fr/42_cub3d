@@ -1,7 +1,7 @@
 ## Cub3D - 42
 
 # Description:
-So Long is a 2D game project that introduces fundamental game programming concepts using the MiniLibX graphics library. The player controls a character that must collect all items on a map and reach the exit using the shortest path possible. This project focuses on working with textures, sprites, window management, and event handling. The game features a top-down view with tile-based movement, where players navigate through maps defined by .ber files containing walls, collectibles, empty spaces, player starting position, and exit points. 
+cub3D is a 3D graphics project inspired by the world-famous Wolfenstein 3D game. The project implements a ray-casting engine to create a "realistic" 3D of the inside of a maze. The project uses the miniLibX graphics library to display wall textures, floor, colors, and allow smooth window management. The program takes a scene description file (.cub format) that defines the maze layout, textures, and colors, parsing this information to create the map and launch the game.
 
 <img src="./image.png" alt="Screenshot du jeu" width="500">
 
@@ -26,28 +26,24 @@ Part of 42 Common Core.
 ```
   - `1` represents a wall.
   - `0` represents an empty space.
-  - `P` represents the character.
-  - `C` represents a collectible
-  - `M` represents a monster.
-
+  - `N/S/E/W` represents the character. (depend on the orientation the player start with)
 
 # Main Technologies / Skills Used:
 
 - **Programming Languages:** C
-- **Graphics Programming:** Working with the MiniLibX library for window and image creation  
-- **2D Game Management:** Managing player position and map grid navigation
-- **Event Handling:** Managing keyboard inputs and window events
-- **Texture Management:** Loading, displaying, and manipulating sprites and textures
-- **Map Parsing:** Reading and validating .ber map files with specific formatting requirements
-- **Memory Management:** Proper allocation and cleanup of graphics resources
-- **File I/O Operations:** Reading map files and handling file errors
-- **Error Handling:** Comprehensive validation of map structure and game states
-- **Makefile Management:** Building projects with graphics library dependencies
+- **Graphics Programming:** miniLibX library for window management, image displayment, and event handling
+- **Ray-Casting Algorithm:** Mathematical implementation of ray-casting principles to give a 3D impression
+- **Computer Graphics & Mathematical Concepts:** 3D perspective projection, texture mapping, Trigonometry, and pixel manipulation
+- **Algorithm Optimization:** Efficient ray-casting implementation for real-time performance
+- **File Parsing:** Custom .cub file format parsing for scene description
+- **Memory Management:** Dynamic allocation for image data, textures, and scene information
+- **Error Handling:** Comprehensive validation for file formats, map validity, and system resources
+- **Makefile Management:** For automating compilation with graphics library linking
 
 # Installation and compilation
 1. Clone this repository into your project:
 ```bash
-git clone git@github.com:Philippe89fr/42_soLong.git
+git clone git@github.com:Philippe89fr/42_cub3d.git
 ```
 2. Run the following command:
 ```bash
